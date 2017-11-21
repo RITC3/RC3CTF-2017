@@ -1,0 +1,323 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*----- reset over -----*/
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    color: #ff9966;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+h3{
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #ff5e62;
+    line-height: 2rem;
+    text-align: center;
+}
+
+h4{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #ff5e62;
+    line-height: 1.7rem;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+}
+ul {
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    white-space: nowrap;
+}
+
+ul li {
+    margin: 1.5rem 0;
+}
+
+.module p {
+    text-align: center;
+    padding: .3rem;
+}
+
+.module a {
+    color: white;
+    border-radius: 10px;
+    background-color: #ff9966;
+    padding: .5rem 1rem;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.module a:hover {
+    background-color: #ff5e62;
+    transition: all .5s;
+}
+
+.strong {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+header {
+    color: white;
+    background: #ff9966;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff5e62, #ff9966);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+main {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.description,
+.module {
+    padding: 1rem 0;
+}
+
+.description {
+    padding: 3rem 0;
+}
+
+iframe {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    padding: 2rem 0 2rem;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    color: #000000;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), #000000 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+hr1 {
+    border: none;
+    height: 1px;
+    color: #ff5e62;
+    background-image: linear-gradient(90deg, rgba(255, 0, 0, 0), #ff5e62 50%, rgba(255, 0, 0, 0) 100%);
+}
+.cta {
+    color: white;
+    background: #ff9966;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #ff5e62, #ff9966);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #ff5e62, #ff9966);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem 0 5rem;
+    border-radius: 10px;
+}
+
+.cta h3 {
+    color: white;
+    width: 80%;
+}
+
+.cta a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 1rem;
+    padding: .7rem 2rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.cta a:hover {
+    background-color: white;
+    color: #ff5e62;
+    transition: all .5s;
+}
+
+@media only screen and (max-width: 450px) {
+    main {
+        width: 90%;
+    }
+    p {
+        width: 100%;
+    }
+    .description {
+        padding: 1rem 0;
+    }
+    .cta {
+        margin-bottom: 3rem;
+        background: linear-gradient(to left, #ff5e62, #ff9966);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        height: 45vh;
+    }
+    iframe {
+        width: 90%;
+        height: 30%;
+    }
+}
