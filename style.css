@@ -158,6 +158,7 @@ h3{
     color: #ff5e62;
     line-height: 2rem;
     text-align: center;
+    padding: 1rem 0;
 }
 
 h4{
@@ -188,8 +189,45 @@ ul li {
     margin: 1.5rem 0;
 }
 
-.module p {
+nav{
+    font-size: calc(14px + .5rem);
+    margin: 1.5rem auto;
     text-align: center;
+}
+nav a{
+    padding: 1%;
+
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #ff5e62;
+        text-decoration: underline;
+    transition: all .5s;
+
+}
+
+.back-to-top{
+    position: fixed;
+    left: calc(82vw);
+    top: 90%;
+    color: white;
+    border-radius: 10px;
+    background-color: #ff9966;
+    padding: .5rem 1rem;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.back-to-top:hover {
+    background-color: #ff5e62;
+    transition: all .5s;
+}
+
+
+.module p {
     padding: .3rem;
 }
 
@@ -206,6 +244,16 @@ ul li {
     background-color: #ff5e62;
     transition: all .5s;
 }
+
+.module p, h4{
+    text-align: left;
+}
+
+.module ul{
+    display: flex;
+    margin-bottom: 1rem;
+}
+    
 
 .strong {
     font-size: 4rem;
@@ -319,5 +367,8 @@ hr1 {
     iframe {
         width: 90%;
         height: 30%;
+    }
+    .back-to-top{
+        display: none;
     }
 }
