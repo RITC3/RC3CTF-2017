@@ -1,0 +1,5 @@
+They are given a pcap that has a lot of web traffic (looking at cat pictures). The picture that holds the flag is cat.jpg.
+
+To solve, one can go to File -> Export Objects and find cat.jpg
+
+Flag: RC3-2017{warm_kitty_12unjfea9}
