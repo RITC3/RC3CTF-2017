@@ -22,4 +22,6 @@ o1 = ""
 for letter in letters2:
   o1 += codebook[letter - 1]
   
-  Flag: RC3-2017{thepolymath}
+Flag: RC3-2017{thepolymath}
+
+Special thanks to Greg Daneault for this challenge!!!
