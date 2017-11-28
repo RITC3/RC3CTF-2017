@@ -1,0 +1,25 @@
+Given PDF shows Ben Franklin's crest
+Dumas cipher, one of Ben Franklin's favorite, must be used to solve the challenge
+
+import re
+import random
+codebook =
+"Voulez=voussentirladifference?Jettezlesyeuxsurlecontinentseptentrion
+aldel'amerique.Danslesresolutionsvigoureusesdecesbravescolonsvousreco
+nnoitrezlavoixdelavraieliberte*auxprisesavecl'oppression.Vousfremirez
+,vousvousrevolte=rezcontrelamorgue&ladureteinconcevabledeceux,qui,jal
+ouxal'extremedeleurpropreliberte,pensentdepouvoirdevenirpluspuissants
+,depouvoirresterlibreseux=memesenasservissantleursfreres.Vousnepourre
+zvousempecherdefairevotrecausedecelledecespeuples,deleursavoirgredele
+urfermete,detrem=blerqu'ilsnesuciombentsouslamassueleveedupouvoir,qui
+veutoulesgouvernerarbitrairement,oulesecraser,enfindeleursou=haiterav
+eclegenereuxd.der.toutlesuccespossibledansleurjusteresistance."
+
+letters2 = [random.choice([m.start() + 1 for m in re.finditer(l,
+codebook)]) for l in "thepolymath"]
+# [230, 613, 489, 541, 253, 657, 40, 498, 341, 284, 613]
+o1 = ""
+for letter in letters2:
+  o1 += codebook[letter - 1]
+  
+  Flag: RC3-2017{thepolymath}
