@@ -1,0 +1,40 @@
+Book cipher using the “Webster’s Unabridged Dictionary” by Various, as found on project
+gutenberg is used to solve this challenge. 
+
+● The first letter of each word to define spells Gutenberg Dictionary by Various, which
+when googled should lead to the correct book.
+● Looking at the Nth letter of each definition (start counting after “defn:”) yields the flag:
+○ YOUR SOLUTION IS FINDING MEANING
+
+● G = y
+● U = o
+● T = u
+● E = r
+● N = s
+● B = o
+● E = l
+● R = u
+● G = t
+● D = i
+● I = o
+● C = n
+● T = i
+● I = s
+● O = f
+● N = i
+● A = n
+● R = d
+● Y = i
+● B = n
+● Y = g
+● V = m
+● A = e
+● R = a
+● I = n
+● O = i
+● U = n
+● S = g
+
+Flag: RC3-2017{findingmeaning}
+
+Special thanks to Greg Daneault for this challenge!!!
