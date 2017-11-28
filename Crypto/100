@@ -1,0 +1,11 @@
+Given cipher text: RC3-2017{GUPNCH_AITIL}
+
+GUPNCH
+  ● Use affine cipher to encrypt / decrypt: A = 15; B = 20
+  ● Plain text = GARDEN
+
+AITIL
+  ● Used Caesar cipher to encrypt, shift of 8
+  ● Plain text = SALAD
+
+Flag: RC3-2017{GARDEN_SALAD}
