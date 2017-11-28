@@ -1,0 +1,15 @@
+The first part of the challenge is a report card. Indexing into the name of the course with
+the grade received (A = look at first letter, B=2nd, C=3rd, D=4th, F=5th)
+  ○ This gives SUBDERMATOGLYPHIC
+      ● Googling subdermatoglyphic should bring up the isogram wikipedia page.
+      ● The hint text above the report card implies that you should use isogramming as a technique for getting meaning out of the flags from the proceeding challenges.
+      ● The duplicated letters from the flags spell NIGHTMARES , the final flag.
+      
+F I N D I N G M E A N I N G        N I G
+T H E P O L Y M A T H              H T
+S U M A R R A Y M A N              M A R
+B E E R G A S E S                  E S
+
+Flag: RC3-2017{nightmares}
+
+Special thanks to Greg Daneault for this challenge!!!
