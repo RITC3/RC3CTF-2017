@@ -1,0 +1,16 @@
+Turn the math problems into braille, dots where there are even numbers, empty where there are odd.
+  ○ Decodes to FIX MATH. DIFF OR ABS OF DIF PLUS ONE FOR NEGS
+      ● Instruction means take the difference between the given answer and the real answer (GIVEN -
+REAL) If that answer is negative (or zero) then take the absolute value of the difference and then
+add one. That gives a number 1-26, which can be turned into a letter (A=1, B=2, and so on)
+  ○ Examples:
+      ■ 42 + 29 = 71. Actual answer is 71, 71 - 71 = 0, 0 + 1 = 1 = A
+      ■ 54 + 21 = 57. Actual answer is 75, 57 - 75 = -18, 18 + 1 = 19 = S
+      ■ 66 + 15 = 84. Actual answer is 81, 84 - 81 = 3 = C
+  ○ Decodes to ASCII GIVN ROWS ONE WHEN PRIME OR END IN TWO
+        ● Instruction means to turn each row of numbers and turn it into seven digit binary for an ascii representation. A number will be a one if it is prime, or ends in two. Otherwise it will be zero.
+            ○ Example:
+                ■ 42 (1) 54 (0) 66 (0) 24 (0) 29 (1) 32 (1) 21 (0) = 1000110 = F
+            ○ Decodes to FLAG SUM ARRAY MAN
+            
+ Flag: RC3-2017{sumarrayman}
