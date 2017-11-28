@@ -1,0 +1,16 @@
+Given an object file.
+The original program is (written in C):
+#include <stdio.h>
+int main(int argc, char *argv[])
+{
+if (argc == 1)
+printf("Hello, World!\n");
+else
+printf("RC3-2017{little_ball_of_fur}");
+return 0;
+}
+
+To solve:
+All you have to do is run strings on the object file and the flag should appear
+
+Flag: RC3-2017{little_ball_of_fur}
