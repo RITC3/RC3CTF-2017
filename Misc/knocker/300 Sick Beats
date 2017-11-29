@@ -1,0 +1,18 @@
+Overview
+The user will be given a WAV file, containing a beat overlaid with a simple vaporwave track.  They will have to decode the beat to determine the flag.
+
+Details
+The beat contained in the WAV file is a sequence of eighth notes at approximately 180 BPM.  The beat alternates on each note between a kick drum and a clap, with a seemingly random sequence.  This sequence is actually a binary sequence that must be recorded and converted to ASCII characters to determine the flag.  The entire flag, with the RC3-2017{} bit, is included.  The sequence encoding is actually quite simple: the kick drum represents a 0, and the clap represents a 1.  There are a total of 40 bytes played over the course of the song.
+
+NOTE: There is one error in the recording!
+
+Byte Number: 29
+What it’s recorded as: D2
+What it should be: 2D
+
+Solving
+By opening the file in VLC and Playback > Speed > Slower, the user has more time to determine the sequence.  Then, you must record a 1 each time a kick drum plays and a 0 each time a clap happens.  Once the track is over, convert the binary to ASCII and you will get the flag:
+
+RC3-2017{f1r3-b33t-fam-c2VhbiBuZXdtYW4=}
+
+(FYI, that base64 string is ‘sean newman’)
