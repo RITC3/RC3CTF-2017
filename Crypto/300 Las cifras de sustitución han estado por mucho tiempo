@@ -1,0 +1,17 @@
+This was all about showing off that not all ciphers and crypto is done with the english language and some other cool ciphers.
+
+Through the hints given in the title, it was old, looking at the characters, one could find that I had used Philip II’s cipher Cg. 1 (1556)
+You can read more about this here: http://cryptiana.web.fc2.com/code/spanish3.htm, but this was the general scheme:
+
+Cipher Scheme
+The general cipher Cg. 1 (1556) consists of the following elements.
+(i) Cipher alphabet (symbols representing the letters of the alphabet). Each letter is assigned two or three symbols. Some symbols look like Latin alphabetic characters but others are more like arbitrary signs.
+(ii) Symbols representing syllables, which generally consist of a base symbol with signs indicating vowels: a right bar for a, a prime accent for e, a left bar for i, a plus sign for o, and a "cursive e"-like sign for u. Such symbols are defined for two-letter combinations ba be bi bo bu through za ze zi zo zu and three-letter combinations cha che chi cho chu, cra cre cri cro cru, etc. In addition, two-letter combinations ba be bi bo bu through ya ye yi yo yu are given two-digit codes 11 through 100 (the number 100 being represented as "c" instead of "100").
+(iii) Symbols for double letters. Two dots over or under a symbol representing a letter indicate the letter is doubled.
+(iv) Nulls (insignificant symbols). One dot over or under a letter or a character indicates it is a null.
+(v) Nomenclature (Bigram/Trigram Code). List of codes consisting of two or three letters (ab, eb, ib, ob, ub, al, el, ... ba, be, bi, bo, bu, bla, ble, ..., xam, xem, xom, xon) representing common names and words arranged in alphabetical order of the initial letters. (Arrangement of the terms with the same initial letters seems to be arbitrary.)
+
+After decrypting using the cipher (making sure to pay attention to doubles and null characters) you'd get:
+philip II was a pretty smart guy too bad that his cipher was brocen in three months head to rc3ctf dot rc3 dot club slash zbynzhgjxaxxhymmvahg to get the flag. The webpage would then present you with:
+
+RC3{crypt0_1s_n0t_4ll_3ngl1sh_4lph4b3t}
