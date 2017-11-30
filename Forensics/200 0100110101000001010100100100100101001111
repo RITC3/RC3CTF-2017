@@ -1,0 +1,11 @@
+Forensics 200: 0100110101000001010100100100100101001111 (Mario)
+
+Who doesn't love an excuse to go back and play some classic games!
+Although it should have been pretty apparent from the start that this wasn't the original ROM (mario was named RC3)
+
+From the hint about trying to get through to the first castle, you either played the game and got stuck on the wall or opened up a ROM editor to cheat your way there!
+You should have noticed some editing and moving of piecies of the level, specifically some fire spinners nicely lined up in a hallway.
+
+The hinted at fact that the flag was short + the binary in the title should have hinted you to view this as a 32 bit string (fire spinners and the final wall as 1's, empty spaces as 0's to give you the final text and flag:
+
+RC3{RTAI}
